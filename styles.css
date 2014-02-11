@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;	
+	font-family: "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+fieldset
+{
+	margin: 0 auto;
+	padding: 0;
+	width: 500px;
+	height: 400px;
+	text-align: center;
+	border: none;
+}
+
+h1
+{
+	font-size: 50px;	
+}
+
+#floater
+{
+	float: left;
+	height: 50%;
+	width: 100%;
+	margin-bottom: -50px;
+}
+
+#content
+{
+	clear: both;
+	border: 1px solid #CCC;
+	padding-top: 5px;
+	padding-bottom: 20px;
+	border-radius: 20px;
+}
+
+input[type="text"]
+{
+	width: 100px;	
+	margin-bottom: 20px;
+	padding: 3px;
+	border: 1px solid #666;
+	border-radius: 5px;
+}
+
+button
+{
+	width: 100px;
+	padding: 8px;
+	border: none;
+	font-size: 80%;
+	border: none;
+	border-radius: 5px;
+	color: #FFF;
+}
+
+#submitButton
+{
+	background: #0C3;	
+	color: #FFF;
+}
+
+#resetButton
+{
+	background: #F00;
+	color: #FFF;	
+}
+
+#circle
+{
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	border: 1px solid #999;
+	margin: 0 auto;	
+	margin-bottom: 20px;
+	color: #999;
+	line-height: 200px;
+	font-size: 36px;
+	background: #FFF;
+}
+
+.hotcolor
+{
+	color: #E42217;	
+}
+
+.coldcolor
+{
+	color: #56A5EC;	
+}

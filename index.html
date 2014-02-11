@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Hot or Cold: A Guessing Game</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="hotorcold.js"></script>
+	<!-- [if lt IE9 >
+    	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <! [endif] -->
+</head>
+
+<body>
+	
+    <fieldset>
+    	<div id="floater"></div>
+    	<div id="content">
+        	<h1><span class="hotcolor">Hot</span>/<span class="coldcolor">Cold</span> Game</h1>
+        	<div id="circle"><span>hot/cold</span></div>
+            <form>
+                <input type="text" id="guess" />
+                <br />
+                <button type="submit" id="submitButton">Guess</button>
+                <button type="reset" id="resetButton">Restart</button>
+            </form>
+            <section>
+            	<h3>Guesses</h3>
+                <label id="guesses" />
+            </section>
+        </div>
+    </fieldset>
+
+</body>
+</html>
