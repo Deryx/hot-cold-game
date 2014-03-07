@@ -18,17 +18,24 @@
     	<div id="floater"></div>
     	<div id="content">
         	<h1><span class="hotcolor">Hot</span>/<span class="coldcolor">Cold</span> Game</h1>
-        	<div id="circle"><span>hot/cold</span></div>
             <form>
-                <input type="text" id="guess" />
+                <div id="o-circle">
+                    <div id="circle">
+                    	<input type="text" id="guess" value="?" />
+                    </div>
+                </div>
                 <br />
                 <button type="submit" id="submitButton">Guess</button>
-                <button type="reset" id="resetButton">Restart</button>
+                <button type="reset" id="resetButton">New Game</button>
+                <div>
+                	<br /><br />
+                    <label id="status" />                
+                </div>
+                <section>
+                    <h3>Guesses</h3>
+                    <label id="guesses" />
+                </section>
             </form>
-            <section>
-            	<h3>Guesses</h3>
-                <label id="guesses" />
-            </section>
         </div>
     </fieldset>
 
