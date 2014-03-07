@@ -9,11 +9,12 @@ var i = 0;
 	   
 var fireRed = "#E42217";
 var iceBlue = "#56A5EC";
+var gold = "#D4A017";
 
 $(document).ready(function() {
+	
+	$("#status").text( "Let's Play!!!" );
 	   
-   	$( "#circle" ).text( "Let's Play!" );
-			
 	$( "#submitButton" ).on( "click", function( e ) 
 	{
 		e.preventDefault();
@@ -22,7 +23,9 @@ $(document).ready(function() {
 		   
 		if ( answer == guess )
 		{
-		   $( "#circle" ).text( "you won!" ).css( { "background":fireRed, "color":"#FFF", "font-size":"45px" } );
+		   $( "#circle" ).css( { "background":gold, "color":"#FFF", "font-size":"65px" } );
+		   $( "#guess" ).css( { "background":gold, "color":"#FFF", "font-size":"65px" } );
+		   $( "#status" ).text( "you won!" );
 		   
 		   $( "#guesses" ).text( "Number of guesses: " ).append( i + 1 );
 				   
@@ -38,25 +41,34 @@ $(document).ready(function() {
 		   {
 			   if ( guess > answer )
 			   {
-			   	   $( "#circle" ).text( "Over!!!" ).css( { "background":iceBlue, "color":"#012345", "font-size":"50px" } );   
+			   	   $( "#circle" ).css( { "background":iceBlue, "color":"#012345", "font-size":"65px" } ); 
+				   $( "#status" ).text( "Over!!!" );  
 			   }
 			   else
 			   {
 				   if ( currentDifference > 0 && currentDifference <= 5 )
 				   {
-					   $( "#circle" ).text( "Hot!" ).css( { "background":fireRed, "color":"#FFF", "font-size":"30px" } );
+					   $( "#circle" ).css( { "background":fireRed, "color":"#FFF", "font-size":"65px" } );
+					   $( "#guess" ).css( { "background":fireRed, "color":"#FFF", "font-size":"65px" } );
+				   	   $( "#status" ).text( "Hot!" );  
 				   }
 				   else if ( currentDifference > 5 && currentDifference <= 10 )
 				   {
-					   $( "#circle" ).text( "Very warm!" ).css( { "background":fireRed, "color":"#FFF", "font-size":"25px" } );
+					   $( "#circle" ).css( { "background":fireRed, "color":"#FFF", "font-size":"65px" } );
+					   $( "#guess" ).css( { "background":fireRed, "color":"#FFF", "font-size":"65px" } );
+				   	   $( "#status" ).text( "Very warm!" );  
 				   }
 				   else if ( currentDifference > 10 && currentDifference <= 20 )
 				   {
-					   $( "#circle" ).text( "Warm!" ).css( { "background":fireRed, "color":"#FFF", "font-size":"30px" } );
+					   $( "#circle" ).css( { "background":fireRed, "color":"#FFF", "font-size":"65px" } );
+					   $( "#guess" ).css( { "background":fireRed, "color":"#FFF", "font-size":"65px" } );
+				   	   $( "#status" ).text( "Warm!" );  
 				   }
 				   else if (currentDifference > 20 )
 				   {
-					   $( "#circle" ).text( "Cold!" ).css( { "background":iceBlue, "color":"#FFF", "font-size":"35px" } );
+					   $( "#circle" ).css( { "background":iceBlue, "color":"#FFF", "font-size":"65px" } );
+					   $( "#guess" ).css( { "background":iceBlue, "color":"#FFF", "font-size":"65px" } );
+				   	   $( "#status" ).text( "Cold!" );  
 				   }
 			   
 			   		previousDifference = Math.abs( answer - guess );
@@ -75,17 +87,23 @@ $(document).ready(function() {
 			   
 			   if ( guess > answer )
 			   {
-			   	   $( "#circle" ).text( "Over!!!" ).css( { "background":iceBlue, "color":"#FFF", "font-size":"50px" } );   
+			   	   $( "#circle" ).css( { "background":iceBlue, "color":"#FFF", "font-size":"65px" } );
+				   $( "#guess" ).css( { "background":iceBlue, "color":"#FFF", "font-size":"65px" } )   
+				   $( "#status" ).text( "Over!!!" );  
 			   }
 			   else
 			   {
 				   if ( previousDifference < currentDifference )
 				   {
-						$( "#circle" ).text( "Colder" ).css( { "background":iceBlue, "color":"#012345", "font-size":"35px" } );
+						$( "#circle" ).css( { "background":iceBlue, "color":"#012345", "font-size":"65px" } );
+						$( "#guess" ).css( { "background":iceBlue, "color":"#012345", "font-size":"65px" } );
+						$( "#status" ).text( "Colder" );
 				   }
 				   else if ( previousDifference > currentDifference )
 				   {
-						$( "#circle" ).text( "Warmer" ).css( { "background":fireRed, "color":"#FFF", "font-size":"35px" } );
+						$( "#circle" ).css( { "background":fireRed, "color":"#FFF", "font-size":"65px" } );
+						$( "#guess" ).css( { "background":fireRed, "color":"#FFF", "font-size":"65px" } );
+						$( "#status" ).text( "Warmer" );
 				   }
 			   }
 			}
