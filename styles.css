@@ -8,6 +8,7 @@ body
 	width: 100%;
 	height: 100%;	
 	font-family: "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	background: url(images/hot--cold-hd-wallpaper-3987.jpg) no-repeat;
 }
 
 fieldset
@@ -25,6 +26,11 @@ h1
 	font-size: 50px;	
 }
 
+section
+{
+	margin-top: 10px;	
+}
+
 #floater
 {
 	float: left;
@@ -36,19 +42,21 @@ h1
 #content
 {
 	clear: both;
-	border: 1px solid #CCC;
 	padding-top: 5px;
 	padding-bottom: 20px;
-	border-radius: 20px;
 }
 
 input[type="text"]
 {
 	width: 100px;	
-	margin-bottom: 20px;
-	padding: 3px;
-	border: 1px solid #666;
-	border-radius: 5px;
+	padding: 10px;
+	border: none;
+	border-bottom: 1px solid #012345;
+	background: #56A5EC;
+	width: 100px;
+	height: 60px;
+	text-align: center;
+	font-size: 65px;
 }
 
 button
@@ -74,18 +82,30 @@ button
 	color: #FFF;	
 }
 
-#circle
+#o-circle
 {
 	border-radius: 50%;
-	height: 200px;
-	width: 200px;
-	border: 1px solid #999;
+	border: 10px solid #000;
+	height: 300px;
+	width: 300px;
 	margin: 0 auto;	
 	margin-bottom: 20px;
 	color: #999;
-	line-height: 200px;
-	font-size: 36px;
 	background: #FFF;
+}
+
+#circle
+{
+	border-radius: 50%;
+	border: 1px solid #CCC;
+	height: 300px;
+	width: 300px;
+	margin: 0 auto;
+	border: 1px solid #999;
+	color: #999;
+	line-height: 300px;
+	font-size: 36px;
+	background: #56A5EC;
 }
 
 .hotcolor
@@ -96,4 +116,10 @@ button
 .coldcolor
 {
 	color: #56A5EC;	
+}
+
+#status
+{
+	font-size: 50px;
+	color: #FFF;	
 }
