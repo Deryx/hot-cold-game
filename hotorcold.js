@@ -126,6 +126,6 @@ $(document).ready(function() {
 	
 	$( "#resetButton" ).on( "click", function( e ) 
 	{
-		window.location.href = "http://localhost/thinkful/hotorcold/index.html";
+		window.location.href = "http://deryx.github.io/hot-cold-game/";
 	});
 });
