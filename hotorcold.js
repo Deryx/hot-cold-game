@@ -13,7 +13,7 @@ var gold = "#D4A017";
 
 $(document).ready(function() {
 	
-	$("#status").text( "Pick a number between 1 and 100..." );
+	$("#status").text( "Pick a number between 1 and 100..." ).css( "font-size", "30px" );
 	   
 	$( "#submitButton" ).on( "click", function( e ) 
 	{
